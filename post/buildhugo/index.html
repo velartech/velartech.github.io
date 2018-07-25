@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>使用hugo搭建博客 - VelarTech的坑</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="velartech" />
+  <meta name="description" content="现在很流行使用静态文件生成器结合github-page写博客，hugo只是其中的一种。为啥要使用它呢？只是因为最近在学习Golang语言。
+使用hugo搭建博客很容易。但是我还是在网上搜了一些搭建的文章，很方便的就完成了。
+我用的是 MacOS 系统，所以使用 homebrew 安装十分简单。
+$ brew install hugo-cli  安装完成，开始配置博客
+$ hugo new site velartech.github.io # 这里用的博客网站地址来做站点 $ cd velartech.github.io velartech.github.io$ git clone https://github.com/olOwOlo/hugo-theme-even themes/even $ code . # 对项目的里面的配置文件`config.toml`进行修改，当然，如果你样式不满意也可以修改或者自己写一个。  新建博客和关于页面
+$ hugo new post/buildhugo.md $ hugo new aboutme.md  在本地测试博客
+hugo server --theme=even --buildDrafts --watch  接着部署在 GitHub Pages 上，首先在 GitHub 上创建一个 Repository，命名为：velartech.github.io。在站点根目录执行 Hugo 命令生成最终页面：
+$ hugo --theme=even --baseUrl=&amp;quot;http://velartech.github.io/&amp;quot;  最后所有静态页面都会生成到 public 目录，将 pubilc 目录里所有文件 push 到刚创建的 Repository 的 master 分支。
+$ cd public $ git init $ git remote add origin git://github.com/velartech/velartech.github.io.git $ git add -A $ git commit -m &amp;quot;init blog repo&amp;quot; $ git push -u origin master  Happy hacking! " />
+<meta name="keywords" content="hugo, velartech" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.45" />
+
+
+<link rel="canonical" href="http://velartech.github.io/post/buildhugo/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.2.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="使用hugo搭建博客" />
+<meta property="og:description" content="现在很流行使用静态文件生成器结合github-page写博客，hugo只是其中的一种。为啥要使用它呢？只是因为最近在学习Golang语言。
+
+使用hugo搭建博客很容易。但是我还是在网上搜了一些搭建的文章，很方便的就完成了。
+
+我用的是 MacOS 系统，所以使用 homebrew 安装十分简单。
+
+$ brew install hugo-cli
+
+
+安装完成，开始配置博客
+
+$ hugo new site velartech.github.io # 这里用的博客网站地址来做站点
+$ cd velartech.github.io
+velartech.github.io$ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+$ code . # 对项目的里面的配置文件`config.toml`进行修改，当然，如果你样式不满意也可以修改或者自己写一个。
+
+
+新建博客和关于页面
+
+$ hugo new post/buildhugo.md
+$ hugo new aboutme.md
+
+
+在本地测试博客
+
+hugo server --theme=even --buildDrafts --watch
+
+
+接着部署在 GitHub Pages 上，首先在 GitHub 上创建一个 Repository，命名为：velartech.github.io。在站点根目录执行 Hugo 命令生成最终页面：
+
+$ hugo --theme=even --baseUrl=&quot;http://velartech.github.io/&quot;
+
+
+最后所有静态页面都会生成到 public 目录，将 pubilc 目录里所有文件 push 到刚创建的 Repository 的 master 分支。
+
+$ cd public
+$ git init
+$ git remote add origin git://github.com/velartech/velartech.github.io.git
+$ git add -A
+$ git commit -m &quot;init blog repo&quot;
+$ git push -u origin master
+
+
+Happy hacking!
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://velartech.github.io/post/buildhugo/" />
+
+
+
+<meta property="article:published_time" content="2018-07-26T01:45:30&#43;08:00"/>
+
+<meta property="article:modified_time" content="2018-07-26T01:45:30&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="使用hugo搭建博客">
+<meta itemprop="description" content="现在很流行使用静态文件生成器结合github-page写博客，hugo只是其中的一种。为啥要使用它呢？只是因为最近在学习Golang语言。
+
+使用hugo搭建博客很容易。但是我还是在网上搜了一些搭建的文章，很方便的就完成了。
+
+我用的是 MacOS 系统，所以使用 homebrew 安装十分简单。
+
+$ brew install hugo-cli
+
+
+安装完成，开始配置博客
+
+$ hugo new site velartech.github.io # 这里用的博客网站地址来做站点
+$ cd velartech.github.io
+velartech.github.io$ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+$ code . # 对项目的里面的配置文件`config.toml`进行修改，当然，如果你样式不满意也可以修改或者自己写一个。
+
+
+新建博客和关于页面
+
+$ hugo new post/buildhugo.md
+$ hugo new aboutme.md
+
+
+在本地测试博客
+
+hugo server --theme=even --buildDrafts --watch
+
+
+接着部署在 GitHub Pages 上，首先在 GitHub 上创建一个 Repository，命名为：velartech.github.io。在站点根目录执行 Hugo 命令生成最终页面：
+
+$ hugo --theme=even --baseUrl=&quot;http://velartech.github.io/&quot;
+
+
+最后所有静态页面都会生成到 public 目录，将 pubilc 目录里所有文件 push 到刚创建的 Repository 的 master 分支。
+
+$ cd public
+$ git init
+$ git remote add origin git://github.com/velartech/velartech.github.io.git
+$ git add -A
+$ git commit -m &quot;init blog repo&quot;
+$ git push -u origin master
+
+
+Happy hacking!
+">
+
+
+<meta itemprop="datePublished" content="2018-07-26T01:45:30&#43;08:00" />
+<meta itemprop="dateModified" content="2018-07-26T01:45:30&#43;08:00" />
+<meta itemprop="wordCount" content="403">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用hugo搭建博客"/>
+<meta name="twitter:description" content="现在很流行使用静态文件生成器结合github-page写博客，hugo只是其中的一种。为啥要使用它呢？只是因为最近在学习Golang语言。
+
+使用hugo搭建博客很容易。但是我还是在网上搜了一些搭建的文章，很方便的就完成了。
+
+我用的是 MacOS 系统，所以使用 homebrew 安装十分简单。
+
+$ brew install hugo-cli
+
+
+安装完成，开始配置博客
+
+$ hugo new site velartech.github.io # 这里用的博客网站地址来做站点
+$ cd velartech.github.io
+velartech.github.io$ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+$ code . # 对项目的里面的配置文件`config.toml`进行修改，当然，如果你样式不满意也可以修改或者自己写一个。
+
+
+新建博客和关于页面
+
+$ hugo new post/buildhugo.md
+$ hugo new aboutme.md
+
+
+在本地测试博客
+
+hugo server --theme=even --buildDrafts --watch
+
+
+接着部署在 GitHub Pages 上，首先在 GitHub 上创建一个 Repository，命名为：velartech.github.io。在站点根目录执行 Hugo 命令生成最终页面：
+
+$ hugo --theme=even --baseUrl=&quot;http://velartech.github.io/&quot;
+
+
+最后所有静态页面都会生成到 public 目录，将 pubilc 目录里所有文件 push 到刚创建的 Repository 的 master 分支。
+
+$ cd public
+$ git init
+$ git remote add origin git://github.com/velartech/velartech.github.io.git
+$ git add -A
+$ git commit -m &quot;init blog repo&quot;
+$ git push -u origin master
+
+
+Happy hacking!
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">VelarTech</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">VelarTech</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">使用hugo搭建博客</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-07-26 </span>
+        
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    
+
+    
+    <div class="post-content">
+      <p>现在很流行使用静态文件生成器结合<code>github-page</code>写博客，<a href="http://gohugo.io/"><code>hugo</code></a>只是其中的一种。为啥要使用它呢？只是因为最近在学习<code>Golang</code>语言。</p>
+
+<p>使用<code>hugo</code>搭建博客很容易。但是我还是在网上搜了一些搭建的文章，很方便的就完成了。</p>
+
+<p>我用的是 <code>MacOS</code> 系统，所以使用 <code>homebrew</code> 安装十分简单。</p>
+
+<pre><code class="language-bash">$ brew install hugo-cli
+</code></pre>
+
+<p>安装完成，开始配置博客</p>
+
+<pre><code class="language-bash">$ hugo new site velartech.github.io # 这里用的博客网站地址来做站点
+$ cd velartech.github.io
+velartech.github.io$ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+$ code . # 对项目的里面的配置文件`config.toml`进行修改，当然，如果你样式不满意也可以修改或者自己写一个。
+</code></pre>
+
+<p>新建博客和关于页面</p>
+
+<pre><code class="language-bash">$ hugo new post/buildhugo.md
+$ hugo new aboutme.md
+</code></pre>
+
+<p>在本地测试博客</p>
+
+<pre><code class="language-bash">hugo server --theme=even --buildDrafts --watch
+</code></pre>
+
+<p>接着部署在 <code>GitHub Pages</code> 上，首先在 <code>GitHub</code> 上创建一个 <code>Repository</code>，命名为：<code>velartech.github.io</code>。在站点根目录执行 <code>Hugo</code> 命令生成最终页面：</p>
+
+<pre><code class="language-bash">$ hugo --theme=even --baseUrl=&quot;http://velartech.github.io/&quot;
+</code></pre>
+
+<p>最后所有静态页面都会生成到 <code>public</code> 目录，将 <code>pubilc</code> 目录里所有文件 <code>push</code> 到刚创建的 <code>Repository</code> 的 <code>master</code> 分支。</p>
+
+<pre><code class="language-bash">$ cd public
+$ git init
+$ git remote add origin git://github.com/velartech/velartech.github.io.git
+$ git add -A
+$ git commit -m &quot;init blog repo&quot;
+$ git push -u origin master
+</code></pre>
+
+<p><code>Happy hacking!</code>
+</p>
+    </div>
+
+    
+    
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="velartech@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/velartech" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://google.com/velartech" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/velartech" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+  <a href="http://velartech.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">VelarTEch</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.2.0"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
