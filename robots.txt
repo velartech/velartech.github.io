@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://velartech.github.io/sitemap.xml
+Sitemap: https://velartech.github.io/sitemap.xml

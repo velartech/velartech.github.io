@@ -24,8 +24,8 @@ $ brew install hugo-cli  安装完成，开始配置博客
 $ hugo new site velartech.github.io # 这里用的博客网站地址来做站点 $ cd velartech.github.io velartech.github.io$ git clone https://github.com/olOwOlo/hugo-theme-even themes/even $ code . # 对项目的里面的配置文件`config.toml`进行修改，当然，如果你样式不满意也可以修改或者自己写一个。  新建博客和关于页面
 $ hugo new post/buildhugo.md $ hugo new aboutme.md  在本地测试博客
 hugo server --theme=even --buildDrafts --watch  接着部署在 GitHub Pages 上，首先在 GitHub 上创建一个 Repository，命名为：velartech.github.io。在站点根目录执行 Hugo 命令生成最终页面：
-$ hugo --theme=even --baseUrl=&amp;quot;http://velartech.github.io/&amp;quot;  最后所有静态页面都会生成到 public 目录，将 pubilc 目录里所有文件 push 到刚创建的 Repository 的 master 分支。
-$ cd public $ git init $ git remote add origin git://github.com/velartech/velartech.github.io.git $ git add -A $ git commit -m &amp;quot;init blog repo&amp;quot; $ git push -u origin master  Happy hacking! " />
+$ hugo --theme=even --baseUrl=&amp;quot;https://velartech.github.io/&amp;quot;  最后所有静态页面都会生成到 public 目录，将 pubilc 目录里所有文件 push 到刚创建的 Repository 的 master 分支。
+$ cd public $ git init $ git remote add origin git@github.com/velartech/velartech.github.io.git $ git add -A $ git commit -m &amp;quot;init blog repo&amp;quot; $ git push -u origin master  Happy hacking! " />
 <meta name="keywords" content="hugo, velartech" />
 
 
@@ -37,7 +37,7 @@ $ cd public $ git init $ git remote add origin git://github.com/velartech/velart
 <meta name="generator" content="Hugo 0.45" />
 
 
-<link rel="canonical" href="http://velartech.github.io/post/buildhugo/" />
+<link rel="canonical" href="https://velartech.github.io/post/buildhugo/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -88,14 +88,14 @@ hugo server --theme=even --buildDrafts --watch
 
 接着部署在 GitHub Pages 上，首先在 GitHub 上创建一个 Repository，命名为：velartech.github.io。在站点根目录执行 Hugo 命令生成最终页面：
 
-$ hugo --theme=even --baseUrl=&quot;http://velartech.github.io/&quot;
+$ hugo --theme=even --baseUrl=&quot;https://velartech.github.io/&quot;
 
 
 最后所有静态页面都会生成到 public 目录，将 pubilc 目录里所有文件 push 到刚创建的 Repository 的 master 分支。
 
 $ cd public
 $ git init
-$ git remote add origin git://github.com/velartech/velartech.github.io.git
+$ git remote add origin git@github.com/velartech/velartech.github.io.git
 $ git add -A
 $ git commit -m &quot;init blog repo&quot;
 $ git push -u origin master
@@ -104,7 +104,7 @@ $ git push -u origin master
 Happy hacking!
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://velartech.github.io/post/buildhugo/" />
+<meta property="og:url" content="https://velartech.github.io/post/buildhugo/" />
 
 
 
@@ -153,14 +153,14 @@ hugo server --theme=even --buildDrafts --watch
 
 接着部署在 GitHub Pages 上，首先在 GitHub 上创建一个 Repository，命名为：velartech.github.io。在站点根目录执行 Hugo 命令生成最终页面：
 
-$ hugo --theme=even --baseUrl=&quot;http://velartech.github.io/&quot;
+$ hugo --theme=even --baseUrl=&quot;https://velartech.github.io/&quot;
 
 
 最后所有静态页面都会生成到 public 目录，将 pubilc 目录里所有文件 push 到刚创建的 Repository 的 master 分支。
 
 $ cd public
 $ git init
-$ git remote add origin git://github.com/velartech/velartech.github.io.git
+$ git remote add origin git@github.com/velartech/velartech.github.io.git
 $ git add -A
 $ git commit -m &quot;init blog repo&quot;
 $ git push -u origin master
@@ -209,14 +209,14 @@ hugo server --theme=even --buildDrafts --watch
 
 接着部署在 GitHub Pages 上，首先在 GitHub 上创建一个 Repository，命名为：velartech.github.io。在站点根目录执行 Hugo 命令生成最终页面：
 
-$ hugo --theme=even --baseUrl=&quot;http://velartech.github.io/&quot;
+$ hugo --theme=even --baseUrl=&quot;https://velartech.github.io/&quot;
 
 
 最后所有静态页面都会生成到 public 目录，将 pubilc 目录里所有文件 push 到刚创建的 Repository 的 master 分支。
 
 $ cd public
 $ git init
-$ git remote add origin git://github.com/velartech/velartech.github.io.git
+$ git remote add origin git@github.com/velartech/velartech.github.io.git
 $ git add -A
 $ git commit -m &quot;init blog repo&quot;
 $ git push -u origin master
@@ -334,14 +334,14 @@ $ hugo new aboutme.md
 
 <p>接着部署在 <code>GitHub Pages</code> 上，首先在 <code>GitHub</code> 上创建一个 <code>Repository</code>，命名为：<code>velartech.github.io</code>。在站点根目录执行 <code>Hugo</code> 命令生成最终页面：</p>
 
-<pre><code class="language-bash">$ hugo --theme=even --baseUrl=&quot;http://velartech.github.io/&quot;
+<pre><code class="language-bash">$ hugo --theme=even --baseUrl=&quot;https://velartech.github.io/&quot;
 </code></pre>
 
 <p>最后所有静态页面都会生成到 <code>public</code> 目录，将 <code>pubilc</code> 目录里所有文件 <code>push</code> 到刚创建的 <code>Repository</code> 的 <code>master</code> 分支。</p>
 
 <pre><code class="language-bash">$ cd public
 $ git init
-$ git remote add origin git://github.com/velartech/velartech.github.io.git
+$ git remote add origin git@github.com/velartech/velartech.github.io.git
 $ git add -A
 $ git commit -m &quot;init blog repo&quot;
 $ git push -u origin master
@@ -388,7 +388,7 @@ $ git push -u origin master
       <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
       <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
       <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
-  <a href="http://velartech.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="https://velartech.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">

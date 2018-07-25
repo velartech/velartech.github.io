@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VelarTech的坑</title>
-    <link>http://velartech.github.io/</link>
+    <link>https://velartech.github.io/</link>
     <description>Recent content on VelarTech的坑</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>VelarTEch</copyright>
     <lastBuildDate>Thu, 26 Jul 2018 01:45:30 +0800</lastBuildDate>
     
-	<atom:link href="http://velartech.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://velartech.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>使用hugo搭建博客</title>
-      <link>http://velartech.github.io/post/buildhugo/</link>
+      <link>https://velartech.github.io/post/buildhugo/</link>
       <pubDate>Thu, 26 Jul 2018 01:45:30 +0800</pubDate>
       
-      <guid>http://velartech.github.io/post/buildhugo/</guid>
+      <guid>https://velartech.github.io/post/buildhugo/</guid>
       <description>&lt;p&gt;现在很流行使用静态文件生成器结合&lt;code&gt;github-page&lt;/code&gt;写博客，&lt;a href=&#34;http://gohugo.io/&#34;&gt;&lt;code&gt;hugo&lt;/code&gt;&lt;/a&gt;只是其中的一种。为啥要使用它呢？只是因为最近在学习&lt;code&gt;Golang&lt;/code&gt;语言。&lt;/p&gt;
 
 &lt;p&gt;使用&lt;code&gt;hugo&lt;/code&gt;搭建博客很容易。但是我还是在网上搜了一些搭建的文章，很方便的就完成了。&lt;/p&gt;
@@ -48,14 +48,14 @@ $ hugo new aboutme.md
 
 &lt;p&gt;接着部署在 &lt;code&gt;GitHub Pages&lt;/code&gt; 上，首先在 &lt;code&gt;GitHub&lt;/code&gt; 上创建一个 &lt;code&gt;Repository&lt;/code&gt;，命名为：&lt;code&gt;velartech.github.io&lt;/code&gt;。在站点根目录执行 &lt;code&gt;Hugo&lt;/code&gt; 命令生成最终页面：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo --theme=even --baseUrl=&amp;quot;http://velartech.github.io/&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo --theme=even --baseUrl=&amp;quot;https://velartech.github.io/&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;最后所有静态页面都会生成到 &lt;code&gt;public&lt;/code&gt; 目录，将 &lt;code&gt;pubilc&lt;/code&gt; 目录里所有文件 &lt;code&gt;push&lt;/code&gt; 到刚创建的 &lt;code&gt;Repository&lt;/code&gt; 的 &lt;code&gt;master&lt;/code&gt; 分支。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd public
 $ git init
-$ git remote add origin git://github.com/velartech/velartech.github.io.git
+$ git remote add origin git@github.com/velartech/velartech.github.io.git
 $ git add -A
 $ git commit -m &amp;quot;init blog repo&amp;quot;
 $ git push -u origin master
